@@ -716,40 +716,60 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     </div>
 
     <!-- Right Side -->
-    <div class="appointment-form">
+<div class="appointment-form">
 
-        <h2>Online Appointment</h2>
+    <h2>Online Appointment</h2>
 
-        <form>
+    <form action="https://formsubmit.co/matrilab.burwan@gmail.com" method="POST">
 
-            <div class="form-grid">
+        <!-- Hidden Settings -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
 
-                <input type="text" placeholder="Full Name">
+        <div class="form-grid">
 
-                <input type="email" placeholder="Email Address">
+            <input type="text"
+            name="name"
+            placeholder="Full Name"
+            required>
 
-                <input type="tel" placeholder="Mobile Number">
+            <input type="email"
+            name="email"
+            placeholder="Email Address"
+            required>
 
-                <select>
-                    <option>Select Service</option>
-                    <option>Pathology Testing</option>
-                    <option>Digital X-Ray</option>
-                    <option>Digital Dental X-Ray</option>
-                    <option>12-Channel ECG</option>
-                    <option>Home Collection</option>
-                    <option>Doctor Consultation</option>
-                    <option>Health Packages</option>
-                </select>
+            <input type="tel"
+            name="phone"
+            placeholder="Mobile Number"
+            required>
 
-            </div>
+            <select name="service" required>
 
-            <textarea placeholder="Message / Test Details"></textarea>
+                <option value="">Select Service</option>
 
-            <button type="submit" class="submit-btn">
-                Book Appointment
-            </button>
+                <option>Pathology Testing</option>
+                <option>Digital X-Ray</option>
+                <option>Digital Dental X-Ray</option>
+                <option>12-Channel ECG</option>
+                <option>Home Collection</option>
+                <option>Doctor Consultation</option>
+                <option>Health Packages</option>
 
-        </form>
+            </select>
+
+        </div>
+
+        <textarea
+        name="message"
+        placeholder="Message / Test Details"></textarea>
+
+        <button type="submit" class="submit-btn">
+            Book Appointment
+        </button>
+
+    </form>
+
+</div>
 
     </div>
 
