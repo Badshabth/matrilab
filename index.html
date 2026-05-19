@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head><link rel="icon" type="image/png" href="favicon.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matri Diagnostic Laboratory & X-Ray Centre</title>
@@ -24,16 +24,28 @@
     </div>
 
     <nav class="bg-white shadow-md sticky top-0 z-50 px-4 sm:px-12 py-4 flex justify-between items-center">
-        <div class="flex items-center space-x-3">
-            <div class="bg-blue-100 p-2.5 rounded-full text-[#0b2154] text-2xl">
-                <i class="fas fa-microscope text-red-500"></i>
-            </div>
-            <div>
-                <span class="text-xl sm:text-2xl font-bold text-[#0b2154] tracking-wide block">MATRI <span class="text-red-500">DIAGNOSTIC</span></span>
-                <span class="text-[10px] sm:text-xs text-gray-500 font-medium tracking-widest uppercase block -mt-1">Laboratory & X-Ray Centre</span>
-            </div>
-        </div>
-        <div class="hidden lg:flex space-x-8 font-medium text-slate-700">
+       
+
+<div class="flex items-center space-x-3">
+
+    <div>
+        <img src="favicon.png"
+             alt="MatriLab Logo"
+             class="w-12 h-12 object-contain">
+    </div>
+
+    <div>
+        <h1 class="text-3xl font-bold leading-none">
+            <span class="text-[#0b2154]">MATRI</span>
+            <span class="text-red-500">DIAGNOSTIC</span>
+        </h1>
+
+        <p class="text-sm tracking-[3px] text-gray-500 font-semibold">
+            LABORATORY & X-RAY CENTRE
+        </p>
+    </div>
+
+</div>        <div class="hidden lg:flex space-x-8 font-medium text-slate-700">
             <a href="#home" class="hover:text-red-500 transition text-[#0b2154] font-semibold">Home</a>
             <a href="#services" class="hover:text-red-500 transition">Services</a>
             <a href="#tests" class="hover:text-red-500 transition">Test Packages</a>
@@ -705,7 +717,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
             <i class="fas fa-clock"></i>
             <div>
                 <h4>Working Hours</h4>
-                <span>Mon - Sat : 7:00 AM – 8:00 PM</span>
+                <span>Mon - Sun : 7:00 AM – 6:00 PM</span>
             </div>
         </div>
 
@@ -780,12 +792,11 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 
 
 <!-- Font Awesome -->
-
-
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 
 <style>
+
 *{
     margin:0;
     padding:0;
@@ -839,6 +850,11 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     font-size:16px;
 }
 
+.footer-contact a{
+    color:#d5def1;
+    text-decoration:none;
+}
+
 .footer-contact i{
     color:#4f8dff;
     margin-top:4px;
@@ -872,7 +888,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 }
 
 .footer-links h3,
-.footer-newsletter h3{
+.footer-map h3{
     font-size:28px;
     margin-bottom:22px;
     color:#fff;
@@ -898,53 +914,68 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     padding-left:6px;
 }
 
-.footer-newsletter p{
-    color:#d5def1;
-    line-height:1.8;
-    margin-bottom:22px;
-    font-size:16px;
-}
-
-.newsletter-box{
-    display:flex;
-    border-radius:8px;
+.review-slider-full{
+    width:100%;
     overflow:hidden;
+    margin-top:40px;
+    padding-bottom:20px;
 }
 
-.newsletter-box input{
-    flex:1;
-    padding:14px;
-    border:none;
-    outline:none;
-    font-size:15px;
+.review-track{
+    display:flex;
+    gap:18px;
+    width:max-content;
+    animation:scroll 30s linear infinite;
 }
 
-.newsletter-box button{
-    padding:14px 22px;
-    border:none;
-    background:#4f8dff;
-    color:#fff;
-    font-size:15px;
-    font-weight:600;
-    cursor:pointer;
-    transition:0.3s;
+.review-card{
+    width:240px;
+    background:rgba(255,255,255,0.08);
+    padding:18px;
+    border-radius:14px;
+    color:white;
+    flex-shrink:0;
 }
 
-.newsletter-box button:hover{
-    background:#2d63d4;
+.review-card h4{
+    color:#FFD700;
+    margin-bottom:10px;
+}
+
+.review-card p{
+    margin:10px 0;
+    line-height:1.6;
+    font-size:14px;
+}
+
+.review-card strong{
+    font-size:14px;
 }
 
 .footer-bottom{
     margin-top:22px;
     display:flex;
-    justify-content:space-between;
+    justify-content:center;
     align-items:center;
+    text-align:center;
     color:#d5def1;
     font-size:15px;
 }
 
 .footer-bottom strong{
     color:#fff;
+}
+
+@keyframes scroll{
+
+    from{
+        transform:translateX(0);
+    }
+
+    to{
+        transform:translateX(-50%);
+    }
+
 }
 
 @media(max-width:991px){
@@ -958,30 +989,21 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     gap:45px;
 }
 
-.footer-bottom{
-    flex-direction:column;
-    text-align:center;
-    gap:12px;
-}
-
 .footer-logo{
     font-size:36px;
 }
 
 .footer-links h3,
-.footer-newsletter h3{
+.footer-map h3{
     font-size:24px;
 }
 
-.newsletter-box{
-    flex-direction:column;
-}
-
-.newsletter-box button{
-    width:100%;
+.review-card{
+    width:220px;
 }
 
 }
+
 </style>
 
 <footer class="footer" id="contact" style="scroll-margin-top:80px;">
@@ -1006,41 +1028,40 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         </div>
 
         <div class="footer-contact">
-    <i class="fas fa-phone"></i>
-
-    <a href="tel:+918101897979">
-        +91 8101 897979
-    </a>
-</div>
-
-
-<div class="footer-contact">
-    <i class="fas fa-phone"></i>
-
-    <a href="tel:+919332897979">
-        +91 9332 897979
-    </a>
-</div>
-
-
+            <i class="fas fa-phone"></i>
+            <a href="tel:+918101897979">+91 8101 897979</a>
+        </div>
 
         <div class="footer-contact">
-    <i class="fas fa-envelope"></i>
+            <i class="fas fa-phone"></i>
+            <a href="tel:+919332897979">+91 9332 897979</a>
+        </div>
 
-    <a href="mailto:matrilab.burwan@gmail.com">
-        matrilab.burwan@gmail.com
-    </a>
-</div>
+        <div class="footer-contact">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:matrilab.burwan@gmail.com">
+                matrilab.burwan@gmail.com
+            </a>
+        </div>
 
         <div class="social-icons">
 
+            <a href="https://facebook.com/MATRILAB" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+            </a>
 
-            <a href="https://facebook.com/MATRILAB"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://wa.me/919332897979" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+            </a>
 
+            <a href="#">
+                <i class="fab fa-instagram"></i>
+            </a>
 
-            <a href="https://wa.me/919332897979"><i class="fab fa-whatsapp"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#">
+                <i class="fab fa-youtube"></i>
+            </a>
+
         </div>
 
     </div>
@@ -1051,49 +1072,194 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         <h3>Quick Links</h3>
 
         <ul>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Our Services</a></li>
-            <li><a href="#">Doctor Consultation</a></li>
-            <li><a href="#">Health Packages</a></li>
-            <li><a href="tel:+918101897979">Contact Us</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Our Services</a></li>
+            <li><a href="#appointment">Doctor Consultation</a></li>
+            <li><a href="#tests">Health Packages</a></li>
+            <li><a href="#contact">Contact Us</a></li>
         </ul>
+
+
+<li style="margin-top:18px; color:#dbe4ff; line-height:1.8;">
+
+    <strong style="color:white;">
+        Working Hours
+    </strong>
+
+    <br>
+
+    Mon–Sun : 7:00 AM – 6:00 PM
+
+</li>
+
 
     </div>
 
     <!-- Right -->
-
-
-
-
     <div class="footer-map">
-    <h3>Our Location</h3>
 
-    <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d502.2061309115105!2d87.94192672604434!3d23.927049290571883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f991f0144d8353%3A0x4a49d46064dc2b62!2sMatri%20Diagnostic%20Laboratory%20%26%20X-Ray%20Centre!5e0!3m2!1sen!2sin!4v1779012603403!5m2!1sen!2sin"
-        width="100%"
-        height="250"
-        style="border:0; border-radius:12px;"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
-</div>
+        <h3>Our Location</h3>
+
+        <div class="footer-contact">
+            <i class="fas fa-location-dot"></i>
+            <span><h2>North Side of Burwan Rural Hospital ,<br> Burwan, <br>Murshidabad, <br>West Bengal ,<br>742132 </h2></span>
+        </div>
+
+
+
+
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d502.2061309115105!2d87.94192672604434!3d23.927049290571883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f991f0144d8353%3A0x4a49d46064dc2b62!2sMatri%20Diagnostic%20Laboratory%20%26%20X-Ray%20Centre!5e0!3m2!1sen!2sin!4v1779012603403!5m2!1sen!2sin"
+            width="100%"
+            height="170"
+            style="border:0; border-radius:12px;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
 
     </div>
 
 </div>
 
-<div class="footer-bottom">
+<!-- Review Slider -->
 
+<div class="review-slider-full">
+
+    <div class="review-track">
+
+        <div class="review-card">
+            <h4>⭐⭐⭐⭐⭐</h4>
+            <p>Very accurate pathology reports and excellent staff behaviour.</p>
+            <strong>— Abdul Rahman</strong>
+        </div>
+
+        <div class="review-card">
+            <h4>⭐⭐⭐⭐⭐</h4>
+            <p>Fast X-Ray service with clean environment and affordable pricing.</p>
+            <strong>— Riyaz Alam</strong>
+        </div>
+
+        <div class="review-card">
+            <h4>⭐⭐⭐⭐⭐</h4>
+            <p>ECG and blood test reports were delivered quickly.</p>
+            <strong>— Prakash Das</strong>
+        </div>
+
+        <div class="review-card">
+            <h4>⭐⭐⭐⭐⭐</h4>
+            <p>Best diagnostic centre in Burwan area.</p>
+            <strong>— Sima Das</strong>
+        </div>
+
+        <div class="review-card">
+            <h4>⭐⭐⭐⭐⭐</h4>
+            <p>Hygienic laboratory with modern machines.</p>
+            <strong>— Arman Ali</strong>
+        </div>
+
+        <!-- Duplicate -->
+
+        <div class="review-card">
+            <h4>⭐⭐⭐⭐⭐</h4>
+            <p>Very accurate pathology reports and excellent staff behaviour.</p>
+            <strong>— Abdul Rahman</strong>
+        </div>
+
+        <div class="review-card">
+            <h4>⭐⭐⭐⭐⭐</h4>
+            <p>Fast X-Ray service with clean environment and affordable pricing.</p>
+            <strong>— Riyaz Alam</strong>
+        </div>
+
+        <div class="review-card">
+            <h4>⭐⭐⭐⭐⭐</h4>
+            <p>ECG and blood test reports were delivered quickly.</p>
+            <strong>— Prakash Das</strong>
+        </div>
+
+        <div class="review-card">
+            <h4>⭐⭐⭐⭐⭐</h4>
+            <p>Best diagnostic centre in Burwan area.</p>
+            <strong>— Sima Das</strong>
+        </div>
+
+        <div class="review-card">
+            <h4>⭐⭐⭐⭐⭐</h4>
+            <p>Hygienic laboratory with modern machines.</p>
+            <strong>— Arman Ali</strong>
+        </div>
+
+
+
+    </div>
+<div style="text-align:center; margin-top:25px;">
+
+    <a href="https://g.page/r/CWIr3GRg1ElKEBM/review"
+       target="_blank"
+       style="
+       background:#4285F4;
+       color:white;
+       padding:12px 24px;
+       border-radius:8px;
+       text-decoration:none;
+       font-weight:600;">
+       
+       ⭐ Please Rate Us on Google
+
+    </a>
+
+</div>
+</div>
+
+<div class="footer-bottom">
+<style>
+
+.footer-bottom{
+    border-top:1px solid rgba(255,255,255,0.15);
+    padding-top:22px;
+    margin-top:30px;
+}
+
+</style>
     <div>
         © 2026 <strong>Matri Diagnostic Laboratory & X-Ray Centre</strong>.
         All Rights Reserved.
     </div>
 
-    <div>
-        
-    </div>
-
 </div>
+<style>
+
+.floating-whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    width:60px;
+    height:60px;
+    background:#25D366;
+    color:white;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:32px;
+    text-decoration:none;
+    z-index:99999;
+    box-shadow:0 5px 20px rgba(0,0,0,0.3);
+}
+
+.floating-whatsapp i{
+    color:white;
+}
+
+</style>
+
+<a href="https://wa.me/919332897979"
+   class="floating-whatsapp"
+   target="_blank">
+
+    <i class="fab fa-whatsapp"></i>
+
+</a>
 
 </footer>
