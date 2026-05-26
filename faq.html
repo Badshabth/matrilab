@@ -7,7 +7,7 @@
 
 <meta name="description" content="Matri Diagnostic Laboratory & X-Ray Centre offers pathology tests, digital X-ray, ECG, doctor consultation, and home collection services in Burwan, Murshidabad.">
 
-<meta name="keywords" content="Pathology Lab Burwan, Digital X-Ray Murshidabad, ECG Centre Burwan, Blood Test, Home Collection, Diagnostic Centre">
+<meta name="keywords" content="Pathology Lab Burwan, Digital X-Ray Burwan, ECG Centre Burwan, Blood Test, Home Collection, Diagnostic Centre ,pathology murshidabad, xray burwan,dental xray,dental xray burwan,">
 
 <meta name="author" content="Matri Diagnostic Laboratory & X-Ray Centre">
 
@@ -15,7 +15,7 @@
 
 
 
-    <title>Matri Diagnostic Laboratory & X-Ray Centre</title>
+    <title>FAQs | Matri Diagnostic Laboratory & X-Ray Centre | Burwan</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -92,24 +92,33 @@
 
 
 
-   <div class="hidden lg:flex space-x-8 font-medium text-slate-700">
-            <a href="index.html" class="hover:text-red-500 transition text-[#0b2154] font-semibold">Home</a>
-            <a href="services.html" class="hover:text-red-500 transition">Services</a>
-           
+   <!-- Desktop Menu -->
+<div class="hidden lg:flex space-x-8 font-medium text-slate-700">
+    <a href="index.html" class="hover:text-red-500 transition text-[#0b2154] font-semibold">Home</a>
+    <a href="services.html" class="hover:text-red-500 transition">Services</a>
+    <a href="contact.html" class="hover:text-red-500 transition">Contact</a>
+    <a href="aboutus.html" class="hover:text-red-500 transition">About Us</a>
+</div>
+
+<!-- Right Side -->
+<div class="flex items-center space-x-4">
+
+    <!-- Appointment Button -->
+    <a href="booking.html"
+       class="bg-red-500 hover:bg-[#0b2154] text-white px-5 py-2.5 rounded-md font-medium transition duration-300 shadow-md hidden sm:inline-block">
+        Book Appointment
+    </a>
+
+    <!-- Mobile Menu Button -->
+    <button id="menu-btn" class="lg:hidden text-3xl text-[#0b2154]">
+        ☰
+    </button>
+
+</div>
 
 
-<a href="contact.html" class="hover:text-red-500 transition">Contact</a>
-            
-<a href="aboutus.html" class="hover:text-red-500 transition">About Us</a>
-        </div>
-        <div>
 
-            <a href="booking.html" class="bg-red-500 hover:bg-[#0b2154] text-white px-5 py-2.5 rounded-md font-medium transition duration-300 shadow-md hidden sm:inline-block">
-                Book Appointment
-            </a>
-        </div>
-   
-
+    
 
 
 
@@ -149,6 +158,56 @@ padding-left:90%;
 
 
  </nav>
+
+
+<!-- Mobile Menu -->
+<div id="mobile-menu"
+class="hidden fixed top-[110px] left-0 w-full bg-white px-6 pb-5 pt-2 space-y-4 shadow-md z-[99999]">
+
+    <a href="index.html" class="block text-[#0b2154] font-semibold">
+        Home
+    </a>
+
+    <a href="services.html" class="block text-slate-700">
+        Services
+    </a>
+
+    <a href="contact.html" class="block text-slate-700">
+        Contact
+    </a>
+
+<a href="faq.html" class="block text-slate-700">
+        FAQs
+    </a>
+
+    <a href="aboutus.html" class="block text-slate-700">
+        About Us
+    </a>
+
+    <a href="booking.html"
+       class="block bg-red-500 text-white text-center py-2 rounded-md">
+        Book Appointment
+    </a>
+
+</div>
+
+<script>
+const menuBtn = document.getElementById('menu-btn');
+const mobileMenu = document.getElementById('mobile-menu');
+
+menuBtn.addEventListener('click', () => {
+
+    mobileMenu.classList.toggle('hidden');
+
+    // Change icon
+    if (mobileMenu.classList.contains('hidden')) {
+        menuBtn.innerHTML = '☰';
+    } else {
+        menuBtn.innerHTML = '✕';
+    }
+
+});
+</script>
 
 
 
@@ -855,6 +914,16 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
    target="_blank">
 
     <i class="fab fa-whatsapp"></i>
+    
+    
+    
+    
+    <!-- Call Floating Button -->
+<a href="tel:+918101897979"
+   class="fixed bottom-24 right-5 bg-blue-600 hover:bg-blue-700 text-white w-14 h-14 rounded-full shadow-lg flex items-center justify-center z-50">
+
+   <i class="fas fa-phone-alt text-xl"></i>
+</a>
 
 </a>
 
